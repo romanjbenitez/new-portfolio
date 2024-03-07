@@ -16,19 +16,18 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Canvas camera={{position : [0,2,0], fov: 1}}>
-        <OrbitControls />
+      <Canvas camera={{position : [0,10,0], fov: 25}}>
         <Suspense>
-          <mesh position={[0,-200,0]} rotation={[0.3,4.55,.4]}>
+          <mesh position={[1.4,-5,-0.9]} rotation={[0.3,4.55,.4]}>
             <Keycap />
           </mesh>
-          <mesh position={[0,-200,.6] }  rotation={[0.3,4.55,.4]}>
+          <mesh position={[2,-5,-0.3] }  rotation={[0.3,4.55,.4]}>
             <Keycap />
           </mesh>
-          <mesh position={[.6,-200,.6] }  rotation={[0.3,4.55,.4]}>
+          <mesh position={[1.4,-5,-0.3] }  rotation={[0.3,4.55,.4]}>
             <Keycap />
           </mesh>
-          <mesh position={[-.6,-200,.6] }  rotation={[0.3,4.55,.4]}>
+          <mesh position={[0.8,-5,-0.3] }  rotation={[0.3,4.55,.4]}>
             <Keycap />
           </mesh>
         </Suspense>
