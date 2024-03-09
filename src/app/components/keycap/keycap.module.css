@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+.keycapContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0e0e0e;
+  position: relative;
+}
+
+.keycap {
+  background-color: #eceaea;
+  width: 3.3rem;
+  height: 3.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  position: absolute;
+}
+
+.keycap > div {
+  background-color: #fafafa;
+  width: 2.9rem;
+  height: 2.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  font-size: 1.7rem;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: #242424;
+}
+
+.wrapperUp {
+  position: absolute;
+  left: 900px;
+  animation: x-Axys-up 0.5s linear;
+  transition: all;
+}
+
+.up {
+  top: 320px;
+  animation: y-Axys-up 0.5s ease-in-out;
+  transition: all;
+}
+
+@keyframes x-Axys-up {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: 900px;
+  }
+}
+@keyframes y-Axys-up {
+  0% {
+    transform: scale(0.3);
+    top: 150px;
+  }
+}
+
+.wrapperLeft{
+  position: absolute;
+  left: 840px;
+  transition: all;
+  animation: x-Axys-left 0.5s linear;
+}
+.left {
+  top: 380px;
+  animation: y-Axys-left 0.5s ease-in-out;
+}
+
+@keyframes x-Axys-left {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: 840px;
+  }
+}
+
+@keyframes y-Axys-left {
+  0% {
+    transform: scale(0.3);
+    top: 550px;
+  }
+}
+.wrapperRigth{
+  position: absolute;
+  left: 960px;
+  transition: all;
+  animation: x-Axys-rigth 0.5s linear;
+}
+.rigth {
+  top: 380px;
+  animation: y-Axys-rigth 0.5s ease-in-out;
+}
+
+@keyframes x-Axys-rigth {
+  0% {
+    left: 1200px;
+  }
+  100% {
+    left: 960px
+  }
+}
+
+@keyframes y-Axys-rigth {
+  0% {
+    transform: scale(0.3);
+    top: 150px;
+  }
+}
+
+.wrapperBottom{
+  position: absolute;
+  left: 900px;
+  transition: all;
+  animation: x-Axys-bottom 0.5s linear;
+}
+
+.bottom {
+  top: 380px;
+  animation: y-Axys-bottom 0.5s ease-in-out;
+}
+
+@keyframes x-Axys-bottom {
+  0% {
+    left: 1200px;
+  }
+  100% {
+    left: 900px
+  }
+}
+
+@keyframes y-Axys-bottom {
+  0% {
+    transform: scale(0.3);
+    top: 650px;
+  }
+}
+
