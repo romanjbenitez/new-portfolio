@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+.letterR{
+    position: absolute;
+    font-size: 160px;
+    color: aliceblue;
+    z-index: 2;
+    left: 725px;
+    top: 285px;
+}
+.letterM{
+    position: absolute;
+    font-size: 160px;
+    color: aliceblue;
+    z-index: 2;
+    left: 1005px;
+    top: 285px;
+}
+.letterA{
+    position: absolute;
+    font-size: 160px;
+    color: aliceblue;
+    z-index: 2;
+    left: 1130px;
+    top: 285px;
+}
+.letterN{
+    position: absolute;
+    font-size: 160px;
+    color: aliceblue;
+    z-index: 2;
+    left: 1230px;
+    top: 285px;
+}

@@ -1,6 +1,6 @@
 import styles from "./keycap.module.css";
 
-const Keycap = () => {
+const Keycaps = () => {
   return (
     <div className={styles.keycapContainer}>
       <div className={styles.wrapperUp}>
@@ -27,4 +27,4 @@ const Keycap = () => {
   );
 };
 
-export default Keycap;
+export default Keycaps;
