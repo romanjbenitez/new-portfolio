@@ -92,18 +92,27 @@
   position: absolute;
   left: 960px;
   transition: all;
-  animation: x-Axys-rigth 0.5s linear;
+  animation: x-Axys-rigth 1.1s linear;
 }
 .rigth {
   top: 380px;
-  animation: y-Axys-rigth 0.5s ease-in-out;
+  animation: y-Axys-rigth 1.1s ease-in-out;
 }
-
+.rigth > div {
+  animation: x-Axys-rigth 1.1s linear;
+  transition: all;
+}
 @keyframes x-Axys-rigth {
   0% {
     left: 1200px;
+    background-color: #fafafa;
+  }
+  50%{
+    left: 960px;
+    background-color: #fafafa;
   }
   100% {
+    background-color: #9cf713;
     left: 960px;
   }
 }
@@ -112,6 +121,27 @@
   0% {
     transform: scale(0.3);
     top: 150px;
+  }
+  50% {
+    transform: scale(1);
+    background-color: #eceaea;
+    top: 380px;
+  }
+  64% {
+    transform: scale(0.8);
+  }
+  74% {
+    transform: scale(1.2);
+  }
+  84% {
+    transform: scale(0.8);
+  }
+  94% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    background-color: #7ec90e;
   }
 }
 
