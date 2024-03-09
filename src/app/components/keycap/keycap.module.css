@@ -8,7 +8,7 @@
 }
 
 .keycap {
-  background-color: #eceaea;
+  background-color: #7ec90e;
   width: 3.3rem;
   height: 3.3rem;
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .keycap > div {
-  background-color: #fafafa;
+  background-color: #9cf713;
   width: 2.9rem;
   height: 2.9rem;
   display: flex;
@@ -37,28 +37,60 @@
 .wrapperUp {
   position: absolute;
   left: 900px;
-  animation: x-Axys-up 0.5s linear;
+  animation: x-Axys-up 1s linear;
   transition: all;
 }
 
 .up {
   top: 320px;
-  animation: y-Axys-up 0.5s ease-in-out;
+  animation: y-Axys-up 1s ease-in-out;
   transition: all;
 }
-
+.up > div {
+  animation: x-Axys-up 1.1s linear;
+  transition: all;
+}
 @keyframes x-Axys-up {
   0% {
     left: 600px;
+    background-color: #fafafa;
+  }
+  50% {
+    left: 900px;
+    background-color: #fafafa;
   }
   100% {
+    background-color: #9cf713;
     left: 900px;
   }
 }
+
 @keyframes y-Axys-up {
   0% {
     transform: scale(0.3);
     top: 150px;
+    background-color: #eceaea;
+  }
+  50% {
+    transform: scale(1);
+    top: 320px;
+    background-color: #eceaea;
+  }
+  64% {
+    transform: scale(0.8);
+  }
+  74% {
+    transform: scale(1.2);
+  }
+  84% {
+    transform: scale(0.8);
+  }
+  94% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    background-color: #7ec90e;
   }
 }
 
@@ -67,18 +99,21 @@
   left: 840px;
   transition: all;
   animation: x-Axys-left 0.5s linear;
+  
 }
 .left {
   top: 380px;
   animation: y-Axys-left 0.5s ease-in-out;
+  background-color: #eceaea;
+}
+
+.left > div {
+  background-color: #fafafa;
 }
 
 @keyframes x-Axys-left {
   0% {
     left: 600px;
-  }
-  100% {
-    left: 840px;
   }
 }
 
@@ -107,7 +142,7 @@
     left: 1200px;
     background-color: #fafafa;
   }
-  50%{
+  50% {
     left: 960px;
     background-color: #fafafa;
   }
